@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Pivot Point</title>
+</head>
+<body>
+    <!-- Primary Navigation Bar -->
+    <header>
+        <nav class="primary-navbar">
+            <div class="logo">
+                <h1>Pivot Point</h1>
+            </div>
+            <ul class="companies">
+                <li><a href="realestate.html">Real Estate</a></li>
+                <li><a href="managementservices.html">Management Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Popup Modal -->
+    <div class="popup" id="popup">
+        <!-- Close button -->
+        <span class="close-btn" id="close-btn">&times;</span>
+
+        <form id="register-form">
+            <h2>REGISTER YOUR INTEREST</h2>
+            <p>* All fields are compulsory</p>
+
+            <label for="title">Title:</label>
+            <select id="title" required>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+            </select>
+
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" placeholder="First Name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" placeholder="Last Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email" required>
+
+            <label for="phone">Phone:</label>
+            <div class="phone-input">
+                <span>+971</span>
+                <input type="tel" id="phone" placeholder="Phone" required>
+            </div>
+
+            <label>
+                <input type="checkbox" id="newsletter" required>
+                I’d like to hear about news and offers
+            </label>
+
+            <label>
+                <input type="checkbox" id="privacy-policy" required>
+                I have read and agree to the Privacy Policy
+            </label>
+
+            <button type="submit">ENQUIRE NOW</button>
+        </form>
+    </div>
+
+    <!-- Secondary Navigation Bar -->
+    <nav class="secondary-navbar">
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#partners">Our Partners</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Pivot Point</h1>
+            <p>Expertise in Real Estate and Consulting Services</p>
+            <button onclick="document.getElementById('services').scrollIntoView()">Explore More</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Pivot Point is dedicated to providing top-tier real estate and consulting services. Our team of experts is committed to helping you achieve your goals with the highest level of professionalism and expertise.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer a wide range of services in real estate and consulting to help businesses and individuals succeed. From property investments to strategic consulting, our services are designed to meet your needs and exceed your expectations.</p>
+        <!-- More details about services can go here -->
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners">
+        <h2>Companies We've Worked With</h2>
+        <div class="partners-logos">
+            <img src="images/partner1.png" alt="Partner 1">
+            <img src="images/partner2.png" alt="Partner 2">
+            <img src="images/partner3.png" alt="Partner 3">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pivot Point. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

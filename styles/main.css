@@ -1,0 +1,248 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #4A4A4A;
+}
+
+/* Primary Navigation Bar */
+.primary-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+}
+
+.primary-navbar .logo h1 {
+    margin: 0;
+    font-size: 36px; /* Increased size for Pivot Point */
+    font-weight: bold;
+}
+
+.primary-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.primary-navbar ul li {
+    margin-left: 20px;
+}
+
+.primary-navbar ul li a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.primary-navbar ul li a:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+/* Secondary Navigation Bar */
+.secondary-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 15px 0;
+}
+
+.secondary-navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.secondary-navbar ul li {
+    margin-right: 20px;
+}
+
+.secondary-navbar ul li a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+.secondary-navbar ul li a:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh; /* Fullscreen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 48px; /* Increased size for hero text */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px; /* Rounded button */
+}
+
+.hero-content button:hover {
+    background-color: #357ABD;
+}
+
+/* Section Styles */
+section {
+    padding: 100px 20px; /* Increased padding for better spacing */
+    min-height: 100vh; /* Fullscreen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Partners Section */
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.partners-logos img {
+    max-width: 120px; /* Increased size for logos */
+    height: auto;
+}
+
+/* Contact Section */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#contact input, #contact textarea {
+    padding: 15px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded input fields */
+}
+
+#contact button {
+    padding: 15px 30px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px; /* Rounded button */
+}
+
+#contact button:hover {
+    background-color: #357ABD;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ddd;
+    color: #777;
+}
+
+/* Popup Styles */
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px; /* Rounded container */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 400px;
+    width: 100%;
+}
+
+.popup.show {
+    display: block; /* Make the popup visible */
+}
+
+
+.popup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup label, .popup input, .popup select {
+    margin-bottom: 15px; /* Increased margin for better spacing */
+}
+
+.popup input, .popup select {
+    padding: 12px;
+    border-radius: 10px; /* Rounded inputs and select */
+}
+
+.popup button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 25px; /* Rounded button */
+}
+
+.popup button:hover {
+    background-color: #357ABD;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
